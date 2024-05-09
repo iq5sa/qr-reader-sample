@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Reader</title>
+
+    <style>
+        video{
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(77, 77, 77, 0.5);
+
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1>QR Code Reader</h1>
+    <p style="font-size: 20px;" id="qr-result"></p>
+    <video id="qr-video" width="640" height="480" autoplay></video>
+    <canvas id="qr-canvas" style="display: none;"></canvas>
+    <script src="jsQR.min.js"></script>
+    <script src="qr-reader.js"></script>
+</body>
+</html>
